@@ -1,0 +1,33 @@
+.wrapper {
+    position: relative;
+}
+
+.fa-user , .fa-lock{
+    position: absolute;
+    top: calc(50% - 0.5em); 
+    left:10px;
+}
+
+input {
+   padding-left: 30px;
+}
+
+.banner {
+    background-image: url('/assets/banner.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row {
+    height:100%
+}
+.centerLogin {
+    margin:auto;
+}
+.PTS {
+    background-image: url('/assets/PTSLogo_transp.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height :250px;
+    width: 370px;
+    margin: auto;
+}
