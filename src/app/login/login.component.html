@@ -1,23 +1,27 @@
-<div class="row">
-  <div class="col-sm-9 banner">
-  </div>
-<div class="col-sm-3">
-    <div class="PTS"></div>
-  <div class="card w-75 m-auto">
-    <div class="card-body">
-      <h5 class="card-title">Login</h5>
-      <form autocomplete="off" #f=ngForm>
-        <div class="form-group wrapper">
-            <i class="fa fa-user"></i> 
-            <input type="text" class="form-control" [(ngModel)]="user.usname" name="username" placeholder="Enter Username">
+<div class="changerow">
+  <div class="m-auto">
+    <div class="card  col-12  col-md-6  col-xl-3  centerLogin">
+        <div class="card-body">
+            <div class="row"><div class="card-title col-12"> Fednat Insurance Company </div></div>
+            <div class="row">
+              <div class="col-3 col-md-2 PTS"></div>
+              <div class="col-9 col-md-10"> 
+                <form autocomplete="off" #f=ngForm>
+                    <div class="form-group wrapper">
+                        <i class="fa fa-user"></i> 
+                        <input type="text" class="form-control" [(ngModel)]="user.usname" name="username" placeholder="Enter Username">
+                        <div class="shiftPlaceHolder"> Username </div>
+                    </div>
+                    <div class="form-group wrapper">
+                        <i class="fa fa-lock"></i> 
+                        <input type="password" class="form-control" [(ngModel)] = "user.pwd" name="password" placeholder="Enter Password">
+                        <div class="shiftPlaceHolder"> Password </div>
+                    </div>
+                </form>
+              </div>
+          </div>
+          <div class="row"><button class="btn btn-primary col-md-4 offset-md-4 " (click)="sendData()">Login</button> </div>
         </div>
-        <div class="form-group wrapper">
-            <i class="fa fa-lock"></i> 
-            <input type="password" class="form-control" [(ngModel)] = "user.pwd" name="password" placeholder="Enter Password">
-        </div>
-        <button class="btn btn-primary" (click)="sendData()">Submit</button>
-      </form>
     </div>
   </div>
-</div>
 </div>

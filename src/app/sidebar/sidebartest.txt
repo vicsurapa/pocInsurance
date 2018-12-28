@@ -1,0 +1,20 @@
+<div class="row">
+<div class="col-md-1 main_sidebar">
+    <ul>
+      <li  style="position: relative" *ngFor = "let item of menuOptions;let i= index;">
+       <ng-container *ngIf = "item.link == null">
+           {{item.displayName}}
+           <span class="fa fa-angle-right" style="position:absolute;right:10px;top:14px" (click)="toggleSubMenu(i)"></span>
+           <ul style="display:none">
+              <li *ngFor = "let submenu of menusetUp[item.formalName]">
+                  {{submenuOptions[submenu].displayName}}
+              </li>
+          </ul>
+       </ng-container >
+       <ng-container *ngIf = "item.link != null && item.connectingKey == undefined">
+          {{item.displayName}} 
+      </ng-container >
+      </li>
+    </ul>
+  </div>
+</div>

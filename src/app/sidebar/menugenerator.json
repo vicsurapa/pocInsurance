@@ -1,0 +1,76 @@
+{
+    "sidebar": [
+      {
+        "IDMIMaint": {
+          "formalName": "IDMIMaintenance",
+          "displayName": "IDMI_Maint",
+          "link": null,
+          "helpName": null,
+          "helplink": null
+        }
+      },
+      {
+        "ClaimMaint": {
+          "formalName": "ClaimMaintenance",
+          "displayName": "Claim Maint",
+          "link": null,
+          "helpName": "Maint",
+          "helplink": "maint.cfm"
+        }
+      },
+      {
+        "Fin": {
+          "formalName": "Financial",
+          "displayName": "Financial",
+          "link": null,
+          "helpName": "Financial",
+          "helplink": "financial.cfm"
+        }
+      },
+      {
+        "Pay": {
+          "formalName": "Payments",
+          "displayName": "Payments",
+          "link": null,
+          "helpName": "Payments",
+          "helplink": "payments.cfm"
+        }
+      },
+      {
+        "Coverage": {
+          "formalName": "Coverage",
+          "displayName": "Coverages",
+          "link": "/coverages/coverage.cfm?module=coverage",
+          "helpName": null,
+          "helplink": null
+        }
+      },
+      {
+        "ImportPayments": {
+          "formalName": "Import",
+          "displayName": "Import",
+          "link": "/payments/ImportPayments/paymentsImportMaint.cfmmodule=ImportPayments",
+          "helpName": null,
+          "helplink": null
+        }
+      },
+      {
+        "SinglePayments": {
+          "formalName": "Single Pay",
+          "displayName": "Single Pay",
+          "link": "/policySearch/policySearch_v30.cfm?module=payments&actionType=singlePay",
+          "helpName": "Single Pay",
+          "helplink": "payments.cfm"
+        }
+      },
+      {
+        "Adj": {
+          "formalName": "Adjustments",
+          "displayName": "Adjustments",
+          "link": "/policy/policy.cfm?module=adjustment",
+          "helpName": null,
+          "helplink": null
+        }
+      }
+    ]
+  }

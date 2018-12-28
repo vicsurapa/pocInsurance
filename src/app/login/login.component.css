@@ -11,23 +11,43 @@
 input {
    padding-left: 30px;
 }
+input:focus {
+    box-shadow: none;
+}
+input:focus ~ .shiftPlaceHolder { 
+    display: block;
+}
 
-.banner {
+.changerow {
+    height:100%;
     background-image: url('/assets/banner.jpeg') ;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.row {
-    height:100%
-}
+
 .centerLogin {
     margin:auto;
 }
+
 .PTS {
     background-image: url('/assets/PTSLogo_transp.gif');
     background-repeat: no-repeat;
     background-size: contain;
-    height :250px;
+    height :109px;
     width: 370px;
     margin: auto;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+    text-align:center;
+}
+
+.shiftPlaceHolder {
+    position:absolute;
+    top: -12px;
+    left: 19px;
+    display: none;
+    background-color:white;
 }

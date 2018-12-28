@@ -1,0 +1,21 @@
+ {
+        'formalName': 'ClaimMaintenance',
+        'displayName': 'Claim Maint',
+        'link': null,
+        'helpName': 'Maint',
+        'helplink': 'maint.cfm'
+    },
+     [
+    {
+      'mainmenu': 'IDMIMaintenance',
+      'submenu': ['CompanyFinancial', 'PaymentPlan', 'Cancellation', 'ReportsInfo', 'systemMaint', 'ForceAll']
+    },
+    {
+      'mainmenu': 'Payments',
+      'submenu': ['ImportPayments', 'SinglePayments', 'Adj']
+    },
+    {
+      'mainmenu': 'Payments',
+      'submenu': ['ImportPayments', 'SinglePayments', 'Adj']
+    }
+  ];

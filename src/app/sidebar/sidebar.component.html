@@ -1,0 +1,23 @@
+<div class="row">
+<span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; </span>
+
+<div class="col-4 col-sm-1 col-md-2 main_sidebar">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <ul>
+      <li  class="list-item" style="position:relative"  *ngFor = "let item of menuOptions;let i= index;">
+       <ng-container *ngIf = "item.link == null">
+           <a (click)="toggleSubMenu(i)">{{item.displayName}}
+           <span class="fa fa-angle-right" style="position:absolute;right:10px;top:14px" ></span></a>
+           <ul class="sub-menu" style="display:none">
+              <li *ngFor = "let submenu of menusetUp[item.formalName]">
+                  <a>{{submenuOptions[submenu].displayName}}</a>
+              </li>
+          </ul>
+       </ng-container >
+       <ng-container *ngIf = "item.link != null && item.connectingKey == undefined">
+         <a> {{item.displayName}} </a>
+      </ng-container >
+      </li>
+    </ul>
+</div>
+</div>

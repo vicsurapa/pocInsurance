@@ -8,3 +8,7 @@ html, body , app-root {
  .container-fluid {
      height:100%;
  }
+
+ body {
+     font-size:12px;
+ }
